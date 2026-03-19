@@ -261,6 +261,7 @@ function fullReset(){
  current=rand();
  next=rand();
  updateUI();
+suikaCount=0;
 
  localStorage.removeItem(SAVE_KEY);
 }
@@ -355,7 +356,7 @@ document.addEventListener("keydown",e=>{
  }
 
  if(e.key==="r") fullReset();
- updateUI();
+ updateUI();suikaCount=0;
 });
 
 
